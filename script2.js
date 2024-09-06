@@ -19,7 +19,7 @@ function generateBoard() {
         `;
 
         card.addEventListener('click', flipCard);
-        gameBoard.append(card);
+        gameBoard.appendChild(card);
     }
 
 };
@@ -27,7 +27,7 @@ function generateBoard() {
 function shuffleCards() {
     for(let i = cards.length - 1; i > 0; i--) {
         const random = Math.floor(Math.random() * (i+1));
-        [cards[i], cards[random]] = [cards[random], cards[i]];
+        [cards[i], cards[random]] = [cards[random], hildcards[i]];
     }
 };
 
