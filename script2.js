@@ -98,8 +98,8 @@ function resetBoard() {
 
 function restartGame() {
     matchedPairs = 0;
-    generateBoard();
     shuffleCards();
+    generateBoard();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
