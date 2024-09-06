@@ -19,7 +19,7 @@ function generateBoard() {
         `;
 
         card.addEventListener('click', flipCard);
-        gameBoard.appendChild(card);
+        gameBoard.append(card);
     }
 
 };
