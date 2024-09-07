@@ -27,7 +27,7 @@ function generateBoard() {
 function shuffleCards() {
     for(let i = cards.length - 1; i > 0; i--) {
         const random = Math.floor(Math.random() * (i+1));
-        [cards[i], cards[random]] = [cards[random], hildcards[i]];
+        [cards[i], cards[random]] = [cards[random], cards[i]];
     }
 };
 
@@ -40,6 +40,7 @@ function flipCard() {
     if (this === firstCard) {
         return;
     }
+    
     this.classList.add('flipped');
 
     if (!firstCard) {
@@ -100,6 +101,7 @@ function restartGame() {
     matchedPairs = 0;
     shuffleCards();
     generateBoard();
+    
 };
 
 document.addEventListener('DOMContentLoaded', () => {
